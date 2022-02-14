@@ -24,6 +24,8 @@ set clipboard=unnamed
 
 set termguicolors
 
+let NERDTreeQuitOnOpen='1'
+
 " === Remaps ===
 nnoremap <c-D> :NERDTreeToggle <Enter>
 
