@@ -32,7 +32,7 @@ nnoremap <c-D> :NERDTreeToggle <Enter>
 nnoremap <a-k> :call feedkeys( line('.')==1 ? '' : 'ddkP')<CR>
 nnoremap <a-j> ddp
 
-color PaperColor
+color gruvbox
 
 " === Custom Commands ===
 :command Ecfg :e $MYVIMRC
