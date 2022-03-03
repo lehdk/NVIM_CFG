@@ -31,6 +31,7 @@ nnoremap <c-D> :NERDTreeToggle <Enter>
 
 nnoremap <a-k> :call feedkeys( line('.')==1 ? '' : 'ddkP')<CR>
 nnoremap <a-j> ddp
+nnoremap <s-j> $a<Enter>
 
 color gruvbox
 
