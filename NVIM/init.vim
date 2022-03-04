@@ -8,13 +8,14 @@ call plug#begin('~/.config/nvim/plugins')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'rafi/awesome-vim-colorschemes'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'vim-airline/vim-airline'
+  	Plug 'vim-airline/vim-airline'
+	Plug 'honza/vim-snippets'
 
-  " Git Setup
-  Plug 'mhinz/vim-signify'
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-rhubarb'
-  Plug 'junegunn/gv.vim'
+  	" Git Setup
+  	Plug 'mhinz/vim-signify'
+  	Plug 'tpope/vim-fugitive'
+  	Plug 'tpope/vim-rhubarb'
+  	Plug 'junegunn/gv.vim'
 call plug#end()
 " === Settings ===
 
@@ -29,11 +30,13 @@ let NERDTreeQuitOnOpen='1'
 " === Remaps ===
 nnoremap <c-D> :NERDTreeToggle <Enter>
 
-nnoremap <a-k> :call feedkeys( line('.')==1 ? '' : 'ddkP')<CR>
-nnoremap <a-j> ddp
+nnoremap <a-d> :t.<CR>
+
+nnoremap <a-j> :m .+1<CR>==
+nnoremap <a-k> :m .-2<CR>==
 nnoremap <s-j> $a<Enter>
 
-color gruvbox
+color jellybeans
 
 " === Custom Commands ===
 :command Ecfg :e $MYVIMRC
