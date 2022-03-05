@@ -2,4 +2,6 @@ clear
 
 date
 
-printf "Velkommen klaphat\n\n"
+cowsay Velkommen Klaphat
+
+echo
