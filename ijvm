@@ -1,0 +1,15 @@
+# Put this in ~/bin and add 'export PATH=$PATH:/~/bin' to your .bashrc
+# Remeber to make executable 'sudo chmod +x NAME'
+
+filename=$1
+shift 1
+arguments="$@"
+
+ijvm-asm "$filename.j" "$filename.bc"
+
+if [ -z "$arguments" ]
+then
+        ijvm "$filename.bc"
+else
+        ijvm $filename.bc $arguments
+fi
